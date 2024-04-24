@@ -1,0 +1,250 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+body {
+    
+    font-family: "Mier book",sans-serif ;
+    letter-spacing: 1.1px ;
+    color :#353543
+}
+a{
+    text-decoration: none;
+    color :#353543
+}
+li{
+    list-style-type: none;
+}
+
+.primary-nav{
+    max-width: 1340px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: auto;
+    align-items: center;
+   
+}
+
+.primary-nav>.search-box{
+    border: 1px solid grey;
+    padding: 10px;
+    width: 400px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+    position: relative;
+   
+}
+.search-box>.box{
+    outline: none;
+    border: none;
+    background: transparent;
+    flex: 1;
+    margin-left: 10px;
+    /* color:rgb(159, 32, 137); */
+    font-size: 18px;
+}
+.search-focus{
+    position: absolute;
+    top: 100%;
+    left:0%;
+ 
+    width: 100%;
+   
+    transition: .5s;
+    
+}
+.box:focus + .search-focus{
+opacity: 1;
+visibility: visible;
+z-index: 1;
+top: 103%;
+}
+
+.primary-nav>.vr-Line{
+  width: 2px;
+  height: 40px;
+  background-color: grey;
+  border-radius: 100px;
+}
+.primary-nav>.image-size a{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+
+}
+.Download{
+    padding: 25px 0px;
+    position: relative;
+}
+
+.hr-Line{
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+}
+
+.secondary-nav{
+    max-width: 1340px;
+    margin: auto;
+    position: relative;
+   
+}
+
+.secondary-nav>ul{
+display: flex;
+gap: 0px 40px;
+flex-wrap: wrap;
+
+
+}
+.secondary-nav>ul>li{
+   padding: 20px 0px;
+  
+    }
+   
+.bbh:hover {
+ 
+  border-bottom: 3px solid rgb(159, 32, 137);
+  
+ 
+}
+.bbh a:hover{
+    color: rgb(159, 32, 137);
+    font-weight: bolder;
+    font-size: 15px; 
+}
+.alternative-color{
+    background-color:rgb(248,248,255) ;
+}
+
+.drop-down{
+   
+    position: absolute;
+   
+    display:flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    width: 100%;
+    top: 120%;
+    left: 0%;
+    border: 1px Solid grey ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: rgb(255, 255, 255);
+}
+.secondary-nav>ul>li:hover .drop-down{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+.drop-box{
+  display: inline-block;
+    width: auto;
+   top: 0%;
+    padding: 20px;
+  
+    line-height: 1.6;
+  
+   
+   
+}
+.drop-box>p{
+    color: rgb(159, 32, 137);
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+.Download-hover{
+position: absolute;
+border: 1px;
+top: 103%;
+width: 150%;
+left:-20%;
+z-index: 1;
+padding: 20px;
+opacity: 0;
+visibility: hidden;
+transition: 1s;
+border: 1px Solid grey ;
+background-color: white;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.Download-hover>a img{
+    width: 100%;
+    padding-top:20px ;
+   
+   
+}
+.Download:hover .Download-hover{
+    opacity: 1;
+visibility: visible;
+}
+
+footer{
+    background-color: #ede8f3;
+
+    padding: 40px 0px;
+}
+
+.footer-primary,.footer-secondary{
+  
+    max-width: 1340px;
+    margin: auto;
+    
+}
+.fprimary-1{
+    padding: 0px 8px;
+
+}
+.footer-img{
+    display: flex;
+    gap: 16px;
+
+}
+.fprimary-1>h4,.fprimary-2>ul,.fprimary-3>ul,.fprimary-4>h5 {
+    white-space: nowrap; 
+    overflow: hidden; 
+   
+}
+
+.fprimary-1>p,.fprimary-2>ul,.fprimary-3>ul,.fprimary-4>h5{
+    font-family: "Meri demi" ,sans-serif;
+    font-size: 18px;
+}
+ .footer-ques p{
+    
+    font-size: 14px; 
+    font-weight: 600;
+    padding-top: 4px;
+    color: #616173;
+    
+}
+.word{
+    color:rgb(159, 32, 137); 
+}
+.footer-ques h4 ,.footer-secondary h4{
+    font-size: 19px; 
+    color: #353543ea;
+}
+.links>a{
+    font-family: "Meri demi" ,sans-serif;
+    font-size: 14px;
+    color:rgb(159, 32, 137); 
+    font-weight: 600;
+   
+}
+@media screen and (max-width:450px) {
+  .footer-primary{
+    flex-direction: column;
+    padding: 20px;
+    row-gap: 20px;
+   
+  }
+}
