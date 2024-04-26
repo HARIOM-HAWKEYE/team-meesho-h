@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a8d9521cce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <title>meesho</title>
 </head>
 <body>
-    <header class="laptop sticky top-0 bg-white  ">
+    <header class="laptop sticky top-0 bg-white md:hidden lg:block ">
         <nav class="primary-nav  ">
            <a href="#" class="logo"><img src="/images/meesho_logo.png" width="156px" height="36px" alt="meesho_logo"></a>      
                <div class="search-box  rounded-2xl">
@@ -35,7 +37,7 @@
                </div>
                <div class="Download bbh" >
               
-                    <i class="fa-solid fa-mobile-screen-button fa-lg" ></i>
+                <i class="fa-solid fa-user"></i>
                      <span>Download App 
              
 
@@ -422,7 +424,7 @@
         </nav>
         <div class="hr-Line"></div>
     </header>
-    <div class=" ipad   nav_top   px-3 py-4 bg-[#ede8f3] flex justify-between items-center">
+    <div class=" ipad lg:hidden   nav_top   px-3 py-4 bg-[#ede8f3] flex justify-between items-center">
       <div class="flex ">
         <img src="/images/meesho_logo_mobile.svg" alt="meesho_logo_mobile ">
         <div class="flex flex-col mx-3">
@@ -437,7 +439,7 @@
       </div>
     </div>
 
-    <header class="ipad  sticky top-0  ">
+    <header class="ipad lg:hidden  sticky top-0  ">
      
     
       <nav class="nav_medium laptop  bg-white px-3 py-4  flex justify-between items-center">
@@ -458,7 +460,7 @@
    
 
     </header>
-    <div class=" ipad  px-3 py-4 ">
+    <div class=" ipad lg:hidden  px-3 py-4 ">
         <div class="flex items-center gap-x-2 px-3 py-3 border-solid border-2 border-grey rounded-3xl">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="text" class="box w-full text-sm" placeholder="Search for Sarees,Kurtis,Cosmetics etc ">
@@ -466,7 +468,7 @@
         </div>
 
     </div>
-    <footer class="ipad   footer_mobile px-3 py-2  bg-white fixed bottom-0 left-0 right-0 flex justify-around ">
+    <footer class="ipad lg:hidden   footer_mobile px-3 py-2  bg-white fixed bottom-0 left-0 right-0 flex justify-around ">
       <div class="flex flex-col items-center">
         <i class="fa-solid fa-house-user text-2xl" style="color: #9f2089;"></i>
         <span class="text-lg">Home</span>
@@ -491,7 +493,7 @@
     <footer >
       <div class="footer-primary py-9 flex">
             <div class="fprimary-1  px-2 ">
-<h4  class="text-3xl mb-5">Shop NonStop on Meesho</h4>
+<h4  class="text-3xl   md:text-4xl lg:text-3xl mb-5">Shop NonStop on Meesho</h4>
 <p class="mb-5">
   Trusted by more than 1 Crore Indians 
   <br>
