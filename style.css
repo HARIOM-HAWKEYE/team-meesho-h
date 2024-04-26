@@ -166,7 +166,6 @@ li {
   max-width: none;
 }
 .meesho_supper_container_content {
- 
   padding: 20px 30px;
   color: white;
   background-image: url(https://images.meesho.com/images/pow/supplyBannerDesktop.webp);
@@ -176,7 +175,7 @@ li {
 }
 .signup_btn_now {
   background-color: white;
-  color: #9f2089 ;
+  color: #9f2089;
   font-size: 20px;
   font-weight: bold;
   padding: 15px 20px;
@@ -195,7 +194,6 @@ li {
     flex-direction: column;
   }
 }
-
 
 .primary-nav {
   max-width: 1340px;
@@ -277,8 +275,8 @@ li {
 
 .secondary-nav > ul {
   display: flex;
-  gap: 0px 40px;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .secondary-nav > ul > li {
   padding: 20px 0px;
@@ -286,7 +284,6 @@ li {
 
 .bbh:hover {
   border-bottom: 3px solid rgb(159, 32, 137);
- 
 }
 .bbh a:hover {
   color: rgb(159, 32, 137);
@@ -312,7 +309,6 @@ li {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   background-color: rgb(255, 255, 255);
-  
 }
 .secondary-nav > ul > li:hover .drop-down {
   opacity: 1;
@@ -435,5 +431,188 @@ footer {
     flex-direction: column;
     padding: 20px;
     row-gap: 20px;
+  }
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scrollbar-width: 2px;
+  overflow: hidden;
+  background-color: rgb(232, 230, 230);
+}
+
+.container .slider-container {
+  width: 100vw;
+  transform: scale(1.1);
+  margin: 10px;
+  background-color: white;
+}
+.container .bachat-bazar * {
+  background-color: white;
+  font-size: 15px;
+}
+.container .bachat-bazar h1 {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.container .slider {
+  display: flex;
+  /* animation: slide 20s infinite backwards; */
+  overflow: scroll;
+  background-color: white;
+  padding: 10px;
+}
+
+.container .item {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (max-width: 428px) {
+  .container .item {
+    margin-right: 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.container .advertise img {
+  width: 100%;
+  /* margin-top: 20px; */
+  margin-top: 5px;
+  padding: 10px 0px;
+  background-color: white;
+}
+
+.container .policy img {
+  width: 100vw;
+  margin-top: 5px;
+  background-size: contain;
+  margin-bottom: 5px;
+  padding: 10px 0px;
+  background-color: white;
+}
+@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  .container .advertise img {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+  }
+}
+.container .header {
+  display: flex;
+  justify-content: space-between;
+}
+.container .header h5 {
+  color: rgb(53, 53, 67);
+  font-weight: 700;
+  font-size: 19px;
+  font-style: normal;
+  line-height: 24px;
+  font-family: "Mier bold";
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+}
+.container .header > a {
+  text-decoration: none;
+  color: purple;
+  font-size: 1rem;
+}
+.container .header > a > p {
+  text-transform: uppercase;
+  color: rgb(159, 32, 137);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  font-family: "Mier bold";
+  margin: 0px;
+  padding: 0px;
+}
+.container .daily-deal {
+  padding: 1rem;
+}
+
+.container .timer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.container .timer p {
+  bottom: 15px;
+}
+
+.container .timer-box {
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  border: 2px solid red;
+  height: 20px;
+  width: 6rem;
+  background-color: blanchedalmond;
+}
+
+.container .timer-box p {
+  font-size: 0.8rem;
+  margin-left: 7px;
+  color: red;
+}
+
+.container .timer-box img {
+  bottom: 15px;
+  width: 20px;
+}
+.container .category-title {
+  display: inline;
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.container a img {
+  text-decoration: none;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  border: 2px solid rgb(159, 32, 137);
+}
+.container .category-img {
+  display: block;
+  border-radius: 50%;
+  height: 56px;
+  width: 56px;
+}
+.container .items {
+  border: 2px solid rgb(206, 206, 222);
+  border-radius: 8px;
+  margin: 5px;
+  /* aspect-ratio: auto 32/100; */
+  object-fit: cover;
+}
+.container .items img {
+  height: 100px;
+  width: 100px;
+}
+
+@media screen and (min-width: 680px) {
+  .container {
+    display: none;
   }
 }
