@@ -15,6 +15,187 @@ a {
 li {
   list-style-type: none;
 }
+.topCategoriesHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.horizontalLine {
+  padding: 1px;
+  background-color: #9f2089;
+  width: 60%;
+}
+.topCategoriesHeading h1 {
+  width: max-content;
+  width: 1024px;
+  color: rgb(8, 8, 8);
+  font-size: 34px;
+  margin: 0;
+}
+
+.item {
+  border: 5px solid white;
+  border-radius: 25px;
+  font-size: 2em;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+}
+.item1 {
+  grid-row: 1 / 4;
+}
+.item2 {
+  grid-column: 2/4;
+  background-color: transparent;
+  border: none;
+}
+.item3 {
+  grid-column: 2/3;
+  grid-row: 2 / 4;
+}
+.item4 {
+  grid-column: 3/4;
+  grid-row: 2 / 4;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: repeat(3, 150px);
+}
+.card {
+  background-color: #ed7f40;
+  overflow: hidden;
+  width: 40%;
+  height: 180px;
+  border-radius: 20px;
+  transition: 0.5s ease;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.card-grid {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 200px);
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.beFashion {
+  background-image: url(./images/purple_backgorund.jpg);
+  background-size: cover;
+}
+.beFashion3 {
+  background-image: url(./images/banner.webp);
+  background-size: cover;
+
+  height: 600px;
+}
+.grid-container-2 {
+  display: grid;
+  gap: 10px;
+
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 50px;
+}
+
+.g2item1 {
+  grid-row: 1 / 4;
+  align-content: center;
+  text-align: center;
+  background-color: transparent;
+}
+.g2item2,
+.g2item3,
+.g2item4 {
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.g2item2 > img,
+.g2item3 > img,
+.g2item4 > img {
+  width: 100%;
+  height: 45%;
+  border-radius: 20px;
+  transition: 0.5s ease;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.g2item2 > img:hover,
+.g2item3 > img:hover,
+.g2item4 > img:hover {
+  transform: scale(1.1);
+}
+
+.footer-img {
+  display: flex;
+  gap: 16px;
+}
+
+.meeesho_benifit_image {
+  width: 20px;
+  margin-right: 10px;
+}
+.meesho_supper_benifit {
+  display: flex;
+  align-items: center;
+  padding: 0px 40px;
+  border-right: 2px solid white;
+  height: 25px;
+}
+.meesho_supper_benifit:first-child {
+  padding: 0;
+  padding-right: 40px;
+}
+.meesho-suppliear_benifit_container {
+  display: flex;
+  align-items: center;
+}
+.meesho_supper_container {
+  position: relative;
+}
+.meesho_supper_container {
+  max-width: none;
+}
+.meesho_supper_container_content {
+ 
+  padding: 20px 30px;
+  color: white;
+  background-image: url(https://images.meesho.com/images/pow/supplyBannerDesktop.webp);
+  /* background-size: contain; */
+  background-size: cover;
+  width: 100%;
+}
+.signup_btn_now {
+  background-color: white;
+  color: #9f2089 ;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.signup_btn_now:hover {
+  background-color: rgb(240, 240, 240, 0.9);
+}
+.become {
+  text-shadow: 2px 2px 5px black;
+}
+@media screen and (max-width: 1024px) {
+  .lowestpriceContainer {
+    flex-direction: column;
+  }
+}
+
 
 .primary-nav {
   max-width: 1340px;
