@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+body {
+    
+    font-family: "Mier book",sans-serif ;
+    letter-spacing: 1.1px ;
+    color :#353543;
+ 
+}
+.news_banner{
+    background-image: url(/images/news-banner.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+.hr-Line{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.466);
+}
+.first-div{
+flex-basis: 65%;
+background-image: url(/images/newsroom-astronaut.png);
+height: auto;
+background-size: cover;
+border-radius: 2rem;
+
+
+}
+.second-div{
+    flex-basis: 30%;
+}
+.card{
+overflow: hidden;
+width: 30%;
+}
+.card-image{
+    width: 100%;
+    height: 200px;
+    
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+.card-1{
+    background-image: url(/images/newsroom-card-1.png);
+}
+.card-2{
+    background-image: url(/images/newsroom-card-2.png);
+}
+.card-3{
+    background-image: url(/images/newsroom-card-3.png);
+}
+
+@media screen and (max-width: 824px) {
+    .card {
+      flex-basis: 100%;   
+    }
+    .card-image{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 850px) {
+.container-1{
+    flex-direction: column;
+}
+.first-div {
+    flex-basis: 100%; 
+    height: 300px; 
+
+}}
