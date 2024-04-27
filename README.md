@@ -34,6 +34,8 @@ git clone https://github.com/Ganesh-Patel/Team-Meesho-M.git
 
 4. **Run the project**: Open the HTML files in your web browser to view the Meesho Clone.
 
+5.  **Exploring**:(https://hariom-hawkeye.github.io/team-meesho-h/)
+
 ## Usage
 
 1. **Exploring the Pages**: Navigate through the different pages of the Meesho Clone, such as the homepage, product listings, and checkout process.
