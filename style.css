@@ -185,9 +185,11 @@ li {
   box-sizing: border-box;
   text-decoration: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 .signup_btn_now:hover {
   background-color: rgb(240, 240, 240, 0.9);
+  
 }
 .become {
   text-shadow: 2px 2px 5px black;
