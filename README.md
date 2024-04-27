@@ -34,7 +34,7 @@ git clone https://github.com/HARIOM-HAWKEYE/team-meesho-h
 
 4. **Run the project**: Open the HTML files in your web browser to view the Meesho Clone.
 
-5.  **Exploring**:(https://hariom-hawkeye.github.io/team-meesho-h/)
+5.  **Explore Here**:(https://hariom-hawkeye.github.io/team-meesho-h/)
 
 ## Usage
 
