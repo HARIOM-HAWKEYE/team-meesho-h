@@ -25,7 +25,7 @@ Welcome to the Meesho Clone project! This project aims to replicate the function
 ## Installation
 
 1. **Clone the repository**: 
-git clone https://github.com/Ganesh-Patel/Team-Meesho-M.git
+git clone https://github.com/HARIOM-HAWKEYE/team-meesho-h
 
 2. **Navigate to the project directory**:
 
