@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .main {
+    height: auto;
+    max-width: 1200px;
+    /* background-color: aqua; */
+    margin: auto;
+    display: flex;
+    gap: 0.5rem;
+    position: relative;
+    z-index: -1;
+  }
+  
+  .sidebar {
+    height: fit-content;
+    width: 30%;
+    /* background-color: red; */
+    /* border: 0.4px solid gray;
+    box-shadow: gray; */
+    padding: 0.4rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content {
+    height: auto;
+    width: 70%;
+    /* background-color: blueviolet; */
+  }
+  .top {
+    border: 1px solid rgb(218, 214, 214);
+    box-shadow: #787976;
+
+    padding: 10px;
+    display: flex;
+    border-radius: 0.4rem;
+    justify-content: space-between;
+    /* width: 30%; */
+  }
+  .top label,
+  .top strong {
+    display: inline; /* Display inline */
+  }
+  .top strong{
+    color: #999;
+  }
+  .sub_sidebar {
+    padding: 0rem 0.5rem;
+    margin-top: 0.4rem;
+    border-radius: 0.4rem;
+    border: 1px solid rgb(218, 214, 214);
+    box-shadow: #787976;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 17px;
+  }
+  
+  .sidebar_chield {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem;
+    gap: 0.2;
+    color: #606060;
+  }
+  .sidebar_chield_item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.1rem;
+    gap: 0.4rem;
+    color: #606060;
+  }
+  
+  .home {
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 0px;
+    display: inline-flex;
+    align-items: left;
+  }
+  .home1 {
+    margin-top: 0.9rem;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 5px;
+  }
+  .home1 p{
+        color: #999;
+  }
+  
+  .home input[type="text"] {
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 5px 0px 5px 5px;
+  }
+  
+  .home input[type="text"]::placeholder {
+    color: #999;
+  }
+  
+  .home i.material-icons {
+    color: #999;
+  }
+  .Gender {
+    border: 1px solid black;
+  
+    border-radius: 8px;
+    display: inline-block;
+    width: 40%;
+  }
+  .Male.sidebar_chield label {
+    border: 1px solid #424141;
+    border-radius: 8px;
+    padding: 5px 8px;
+    display: inline-block;
+    margin: 5px;
+  }
+  
+  .Products {
+    background: #f9f9f9;
+    overflow: auto;
+    /* height: 100%;
+    width: 100%; */
+    border-top: 1px solid #ddd;
+  }
+  
+  .Products-items {
+    height: auto;
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .Services-card {
+    margin-top: 4px;
+    width: 200px;
+    height: 330px;
+    border-radius: 8px;
+    border: 1px solid rgb(218, 214, 214);
+    box-shadow: #787976;
+    display: flex;
+    flex-direction: column;
+    line-height: 15px;
+  
+    border-radius: 4px;
+  }
+  .Services-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    /* padding: 0.5rem 1rem; */
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    /* width: 260px; */
+    min-height: 160px;
+    justify-content: space-around;
+  }
+  
+  .Services-card-text > h1 {
+    text-align: center;
+    color: black;
+  }
+  
+  .Services-card > img {
+    height: 51%;
+    width: 100%;
+    /* border-radius: 8px 8px 0px 0px; */
+    /* object-fit: cover; */
+  }
+  
+  .mrp {
+    display: flex;
+    gap: 0.4rem;
+    align-items: baseline;
+  }
+  .rating {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+  }
+  .Services-card-text .Delivery {
+    font-size: 14px;
+    padding: 4px;
+    border-radius: 14px;
+    color: black;
+  }
+  .rating span {
+    background-color: green;
+    padding: 4px 5px;
+    border-radius: 12px;
+    color: white;
+    text-wrap: nowrap;
+  }
+  .rating p {
+    font-size: 12px;
+  }
+  .rating img {
+    margin-left: 10px;
+  }
+  
+  .onwards {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .old-price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .old-price h3 {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .old-price h4 {
+    color: green;
+    text-wrap: nowrap;
+  }
+  
+  @media screen and (max-width: 750px) {
+    .sidebar {
+      width: 40%;
+    }
+  
+    @media screen and (max-width: 680px) {
+      .sidebar {
+        width: 100%;
+      }
+      .sub_sidebar {
+        display: none;
+      }
+      .main {
+        flex-direction: column;
+      }
+      .main-content {
+        width: 100%;
+      }
+      .Services-card {
+        width: 190px;
+      }
+    }
+  }
+  
