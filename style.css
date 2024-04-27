@@ -172,6 +172,8 @@ li {
   /* background-size: contain; */
   background-size: cover;
   width: 100%;
+  position: relative;
+  z-index: -1;
 }
 .signup_btn_now {
   background-color: white;
